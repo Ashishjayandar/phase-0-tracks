@@ -10,7 +10,7 @@
 * What is a branch and why would you use one?
 		A branch holds the literal meaning in git as well, it creates a separate work-flow, in which we can edit the required or assigned feature without affecting the original document which stays in the master. We can understand the branch concept using a tree analogy, as soon as the folder is converted into a git repository (which is like once the tree is born *its an analogy don't mind the flaws* the main stem becomes the master branch), we can create multiple branches with relevant name to it, and working/editing the files,(This is like focusing on a branch from the stem which has all the features and contents of the stem but still is a separate structure). Once we are done working on the branch we can integrate it to the master branch by stagging and committing it.
 
-		This makes sure that the document remains clear of ambiguity. 
+		This makes sure that the document remains clear of ambiguity 
 
 
 
