@@ -1,2 +1,9 @@
 Algorithm for using an elevator.
-	*
+	-Go to the elevator
+	-Depending on whether you need to go up or down press the corresponding button and wait for the lift.
+	-When the lift comes, wait for the people to exit. If there is no one else exiting the elevator
+			- step inside the elevator.
+	-press the button to the floor to which you need to go.
+	-once the floor is reached and the doors are open.
+		- exit the elevator without pushing the person in front of you.
+	  
