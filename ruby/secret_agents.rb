@@ -23,6 +23,7 @@ end
 
 def decryption(str_encrypted)
 index2 = 0
+#alpha = ("a".."z").to_a
 alpha = "abcdefghijklmnopqrstuvwxyz"
 len = str_encrypted.length
 password = ""
