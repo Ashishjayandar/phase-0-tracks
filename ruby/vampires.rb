@@ -12,9 +12,9 @@ while counter < ind do
 	usr_age= gets.chomp
 	puts "What year were you born?"
 	usr_year= gets.chomp
-	puts "Our company cafeteria serves garlic bread. Should we order some for you? (yes/No)"
+	puts "Our company cafeteria serves garlic bread. Should we order some for you? (yes/no)"
 	usr_choice = gets.chomp
-	puts "Would you like to enroll in the company’s health insurance?(yes/No)"
+	puts "Would you like to enroll in the company’s health insurance?(yes/no)"
 	usr_insurance = gets.chomp
 
 	#Validation_checks
@@ -25,7 +25,7 @@ while counter < ind do
 	age = 2017 - usr_year
 
 	if (usr_age != age) || (usr_age > 150)
-		age_flag = true													#the flags are to indicate something is going on out of the ordinary.
+		age_flag = true						#the flags are to indicate something is going on out of the ordinary.
 	else
 		age_flag = false
 	end
@@ -43,7 +43,7 @@ while counter < ind do
 	if usr_insurance == "no"
 		insurance_flag = true
 	elsif usr_insurance == "yes"
-		insurance_flag = false							#as you see they go off when things are going out of normalcy 
+		insurance_flag = false		#as you see they go off when things are going out of normalcy 
 	end
 
 	#analysis
@@ -57,7 +57,7 @@ while counter < ind do
 	end
 
 	if (usr_name == "Drake Cula") || (usr_name == "Tu Fang")
-		red_flag=1													#major flag for name 
+		red_flag=1								#major flag for name 
 	end
 
 	#allergies
@@ -71,7 +71,7 @@ while counter < ind do
 				allergies[id] = usr_input	
 					if usr_input == "sunshine"
 						vsi = 2
-						break											#causes the loop to break and exit
+						break								#causes the loop to break and exit
 					end
 				id +=1
 		end
