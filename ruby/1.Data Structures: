@@ -1,0 +1,28 @@
+1.Data Structures:
+			Data Structures are useful in organizing the data in an efficient way that helps in optimum usage. Some data structures have special advantages while used for certain applications, this helps in retrieving the data all the more easier. 
+
+2.Array:
+			Array is usually defined as a homogeneous collection of data, here the homogeneous nature refers to the data type. Although arrays in ruby can take multiple data type often it is useful to store just a single data type. Arrays are stored in subsequent memory locations, the array name indicates the memory address of the first element stored. There can be multi-dimensional arrays.
+3. Usage of arrays:
+			data set of names of students in the class
+			data set of float of the time recorded for the runners to complete their heat runs
+
+4.Hash:
+			Hash is a unique collection of key and values, in arrays we use index to refer the the values here we use keys. Heterogeneous values can be stored inside a single hash and can be referred to when needed. Hash has a default value of nil, the indexing is done through keys and not numbers.
+
+5.Examples for Hash:
+			To store the entire information of an employee(like an employee database), store name, position, nationality, salary, age etc.,
+			To store the medical history of a person, check for various allergies, previous injuries or conditions etc.,
+
+6.Iteration:
+			It is the process of repeating a block or a set of lines of code a particular number of times or till a condition is met, it can be used for achieving a specific task in a specific number of times. Iteration can be useful if we are collecting multiple information of multiple people.
+			In dictating the direction or number of times,a process has to proceed based on the user's input. It also helps us in retrieving information from a matrix or a dataset. It helps in manipulation with the strings or arrays.
+
+7.Example:
+			If I had to collect a number of records of my employees and print it, then iteration is pivotal in achieving this task.
+
+8.Block:
+			It is a set of multiple lines of code to achieve a particular task. The block has sometimes its own variables and it may be iterated multiple times or could be used to call as a method or function. It is usually defined between { code } or between "do" and "end". 
+
+9.Block Parameter:
+			The block parameter is the value we use in indexing or iterating through the block, the number is based on the indexing or the iteration number. The value is obtained from these directly. There is also a value called "yield", this calls the block of code to be executed whenever the complier reaches this line with yield. So when in a method is being executed and the line with yield is reached it immediately calls for the block to be executed and then after the block is executed the method execution continues.
