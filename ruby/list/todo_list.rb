@@ -6,13 +6,17 @@ class TodoList
 	def get_items
 		@list
 	end
-	def add_item
+	def add_item(item)
+		list << item
+		 p list
 	end
-	def delete_item
+	def delete_item(item)
+		@delete_item=list.delete(item)
+		#list
 	end
-	def retrive_item
+	def get_item(id)
+		@get_item=list[id]
 	end
 end
 
-# list = TodoList.new(["do the dishes", "mow the lawn"])
-# p list.get_items
+
