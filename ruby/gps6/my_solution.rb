@@ -128,7 +128,13 @@ end
 
 #=======================================================================
 # Reflection Section
-
+# 1.The difference between the two syntaxes is that one key is a string and hence it is stored using => and the 
+# other is an identifier and hence can be stored as a symbol
+#2.The require_relative imports the code from the file that we mention, the file is from the same system that we are using,the 
+#require on the other hand loads the functionality associated with the file and also uses gem to locate information online as well.
+#3.We can use .each or .map to iterate through the hash
+#4. The variables were already instance variables which were already available all through the class so they were redundant in passing them on
+#5.I was able to easily iterate through the data structures in this challenge and also learn a lot more about the nested data structures.
 
 
 
