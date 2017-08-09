@@ -15,19 +15,19 @@
 #Once we have looped through the entire array or list we should have a sorted array at the end.
 
 
-def search_array(arr,x)
-	len= arr.length
-	i=0
-	while i < len do
-		if arr[i] == x
-				return i
-				break
-		end
-		i+=1
-	end
-end
+# def search_array(arr,x)
+# 	len= arr.length
+# 	i=0
+# 	while i < len do
+# 		if arr[i] == x
+# 				return i
+# 				break
+# 		end
+# 		i+=1
+# 	end
+# end
 
-p search_array([1,2,3],3)
+# p search_array([1,2,3],3)
 
 
 def fib(y)
@@ -40,7 +40,7 @@ def fib(y)
 	return num
 end
 
-p fib(10)
+p fib(5)
 
 # insert_sort=[4,3,5,2,1]
 
@@ -69,23 +69,23 @@ p fib(10)
 
 
 
-def sorting (insert_sort)
-	length=insert_sort.length
-	i=1
-	while i < length do
-		z= insert_sort[i]
-		j=i-1
-		while j>=0 && insert_sort[j]>z
-			insert_sort[j+1]=insert_sort[j]
-			j=j-1
-		end
-		insert_sort[j+1]=z
-	i+=1
-end
-	return insert_sort
-end
+# def sorting (insert_sort)
+# 	length=insert_sort.length
+# 	i=1
+# 	while i < length do
+# 		z= insert_sort[i]
+# 		j=i-1
+# 		while j>=0 && insert_sort[j]>z
+# 			insert_sort[j+1]=insert_sort[j]
+# 			j=j-1
+# 		end
+# 		insert_sort[j+1]=z
+# 	i+=1
+# end
+# 	return insert_sort
+# end
 
-p sorting([2,5,3,1,4])
+# p sorting([2,5,3,1,4])
 
 
 
