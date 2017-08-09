@@ -35,6 +35,20 @@ function Car(model,color,automatic_shift,max_speed)
 
 var mycar= new Car("BMW","black",true,300);
 console.log(mycar.model);
-//console.log(mycar);
 mycar.makecar();
 mycar.shift();
+
+var mycar= new Car("Tesla","blue",false,250);
+console.log(mycar.model);
+mycar.makecar();
+mycar.shift();
+
+var mycar= new Car("Ferrarri","red",true,500);
+console.log(mycar.model);
+mycar.makecar();
+mycar.shift();
+
+
+
+
+
