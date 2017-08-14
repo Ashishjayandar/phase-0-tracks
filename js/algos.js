@@ -45,9 +45,9 @@ function randomword(num){
 array=randomword(10);
 console.log(array);
 longeststring(array);
-// var dog1={name: "Spot", age: 54}
-// var dog2={name: "Spot", gooddog:true}
+var dog1={name: "Spot", age: 54}
+var dog2={name: "Spot", gooddog:true}
 
-// console.log(compare_objects(dog1,dog2));
+console.log(compare_objects(dog1,dog2));
 // longeststring(["long phrase","longest phrase","longer phrase"]);
 
