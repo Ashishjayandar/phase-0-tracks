@@ -10,6 +10,7 @@ function longeststring(array){
 		}
 	} 
 	console.log("the longest string in the given array is "+long);
+	return long;
 };
 function compare_objects(obj1,obj2){
 	for(x in obj1)
@@ -41,9 +42,9 @@ function randomword(num){
 	return array;
 };
 
-console.log(randomword(10));
-
-
+array=randomword(10);
+console.log(array);
+longeststring(array);
 // var dog1={name: "Spot", age: 54}
 // var dog2={name: "Spot", gooddog:true}
 
