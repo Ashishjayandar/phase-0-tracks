@@ -1,0 +1,93 @@
+SELECT * FROM Students;
+1|Sumail|1|2
+2|Arteezy|3|1
+3|Miracle|5|4
+4|Dendi|3|3
+5|Johan|2|5
+sqlite> SELECT * FROM Course;
+1|Golden Bears
+2|Night Hawks
+3|Red Pandas
+4|Sea Lions
+5|Pocket Gophers
+sqlite> SELECT * FROM Country;
+1|America
+2|India/Indian Subcontinent
+3|Canada
+4|England
+5|Mexico
+UPDATE Country set Country="India" WHERE Country="India/Indian Subcontinent";
+sqlite> SELECT * FROM Country;                                                  1|America
+2|India
+3|Canada
+4|England
+5|Mexico
+SELECT * FROM Students, Country WHERE Students.country_id=Country.id;
+1|Sumail|1|2|2|India
+2|Arteezy|3|1|1|America
+3|Miracle|5|4|4|England
+4|Dendi|3|3|3|Canada
+5|Johan|2|5|5|Mexico
+
+SELECT Students.name,Course.Course FROM Students JOIN Course ON Students.course_id=Course.id;
+Sumail|Golden Bears
+Arteezy|Red Pandas
+Miracle|Pocket Gophers
+Dendi|Red Pandas
+Johan|Night Hawks
+
+
+SELECT Students.name,Country.Country FROM Students JOIN Country ON Students.country_id=Country.id;
+Sumail|India
+Arteezy|America
+Miracle|England
+Dendi|Canada
+Johan|Mexico
+
+
+DELETE FROM Students WHERE id >3;
+sqlite> SELECT * FROM Students;
+1|Sumail|1|2
+2|Arteezy|3|1
+3|Miracle|5|4
+
+
+
+SELECT Students.id, Students.name, Country.Country
+   ...> FROM Students
+   ...> INNER JOIN Country
+   ...> ON Students.id = Country.id;
+1|Sumail|America
+2|Arteezy|India
+3|Miracle|Canada
+
+
+
+SELECT Country.id, Country.Country, Students.name
+   ...> FROM Country
+   ...> LEFT OUTER JOIN Students
+   ...> ON Country.id=Students.id;
+1|America|Sumail
+2|India|Arteezy
+3|Canada|Miracle
+4|England|
+5|Mexico|
+
+SELECT *
+   ...> FROM Students
+   ...> CROSS JOIN Course;
+1|Sumail|1|2|1|Golden Bears
+1|Sumail|1|2|2|Night Hawks
+1|Sumail|1|2|3|Red Pandas
+1|Sumail|1|2|4|Sea Lions
+1|Sumail|1|2|5|Pocket Gophers
+2|Arteezy|3|1|1|Golden Bears
+2|Arteezy|3|1|2|Night Hawks
+2|Arteezy|3|1|3|Red Pandas
+2|Arteezy|3|1|4|Sea Lions
+2|Arteezy|3|1|5|Pocket Gophers
+3|Miracle|5|4|1|Golden Bears
+3|Miracle|5|4|2|Night Hawks
+3|Miracle|5|4|3|Red Pandas
+3|Miracle|5|4|4|Sea Lions
+3|Miracle|5|4|5|Pocket Gophers
