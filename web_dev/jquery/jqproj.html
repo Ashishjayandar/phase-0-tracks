@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+ 
+<script src="http://code.jquery.com/mobile/1.0b1/jquery.mobile-1.0b1.js"></script>
+ 
+<script>
+ 
+$(document).ready(function () {
+ 
+var students = new Array("Ashish", "Ramesh", "Alan", "Magesh", "Dendi");
+ 
+for (i = 0; i < students.length; i++) {
+ 
+$("#students").append("<option value="+students[i] +">"+students[i]+"</option>");
+}
+ 
+
+$("#btnAdd").click(function () {
+ 
+
+var name = frmData.sname.value;
+ 
+alert(name);
+ 
+$("#students").append("<option value="+name+">" + name + "</option>");
+ 
+
+});
+ 
+}); </script>
+
+</head>
+<body>
+<form name="frmData">
+ 
+<select id="students">
+ 
+
+</select> <br /><br />
+ 
+Name : 
+ 
+<input type="text" id="sname" name="sname" /> <br /><br />
+ 
+<input type="button" value="Show" id="btnAdd" />
+</form>
+
+</body>
+</html>
